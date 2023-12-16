@@ -1,5 +1,7 @@
 package edu.kis.vh.nursery;
 
+import java.util.Random;
+
 import edu.kis.vh.nursery.factory.DefaultRhymersFactory;
 import edu.kis.vh.nursery.factory.RhymersFactory;
 
@@ -17,7 +19,7 @@ class RhymersDemo {
 			}
 		}
 
-		java.util.Random rn = new java.util.Random();
+		Random rn = new Random();
 		for (int i = 1; i < 15; i++) {
 			rhymers[3].countIn(rn.nextInt(20));
 		}
